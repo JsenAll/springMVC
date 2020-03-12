@@ -1,0 +1,10 @@
+*/target/*
+*/*.iml
+*.iml
+*/var/*
+*/.idea
+*/log/*
+.idea/*
+*/*.jar
+
+/out/
