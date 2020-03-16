@@ -13,6 +13,7 @@
         <module>springmvc-02-hello</module>
         <module>springmvc-03-hello-anno</module>
         <module>javaweb-01-servlet-01-helloservlet</module>
+        <module>javaweb-02servlet-02-servletContext</module>
     </modules>
 
     <dependencies>
