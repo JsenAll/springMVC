@@ -1,7 +1,4 @@
-package com.jsen; /*
- *@author Jsen
- *@description
- */
+package com.jsen.demo01;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -12,6 +9,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URLEncoder;
 
+/**
+ * @author Jsen
+ * @description 下载
+ */
 public class DownFile extends HttpServlet {
 
     @Override
@@ -35,7 +36,6 @@ public class DownFile extends HttpServlet {
         while ((len = in.read(buffer)) > 0) {
             out.write(buffer, 0, len);
         }
-
         in.close();
         out.close();
 

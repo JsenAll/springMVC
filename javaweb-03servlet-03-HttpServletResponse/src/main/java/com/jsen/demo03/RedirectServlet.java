@@ -1,26 +1,27 @@
-package com.jsen.servlet;
-
-/**
- * @author Jsen
- * @description
- */
+package com.jsen.demo03;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-public class HelloServlet extends HttpServlet {
+/**
+ * @author Jsen
+ * @description 重定向
+ */
+public class RedirectServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        PrintWriter writer = resp.getWriter();
-        writer.println("hello servlet");
+        //原理
+//        resp.setHeader("Location", "/03/imageServlet");
+//        resp.setStatus(302);
+        //一般使用
+        resp.sendRedirect("/03/imageServlet");
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+        doGet(req, resp);
     }
 }

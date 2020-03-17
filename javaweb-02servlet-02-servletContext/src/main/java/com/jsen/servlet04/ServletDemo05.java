@@ -25,7 +25,6 @@ public class ServletDemo05 extends HttpServlet {
         resp.setHeader("Content-type", "text/html;charset=UTF-8");
         resp.getWriter().println("名字为:" + user);
         resp.getWriter().println("密码:" + pwd);
-
     }
 
     @Override
