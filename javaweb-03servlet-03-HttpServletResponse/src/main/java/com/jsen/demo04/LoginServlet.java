@@ -17,13 +17,14 @@ public class LoginServlet extends HttpServlet {
         String usernam = req.getParameter("username");
         String password = req.getParameter("password");
         String[] hobbys = req.getParameterValues("hobbys");
+        System.out.println("爱好:");
         for (String hobby : hobbys) {
             System.out.println(hobby);
         }
 
         System.out.println("用户" + usernam);
         System.out.println("密码" + password);
-        System.out.println("爱好" + hobbys.toString());
+
     }
 
     @Override
