@@ -7,7 +7,7 @@
 
     <servlet>
         <servlet-name>down</servlet-name>
-        <servlet-class>com.jsen.demo01.DownFile</servlet-class>
+        <servlet-class>com.jsen.demo01cookie.DownFile</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>down</servlet-name>

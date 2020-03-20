@@ -1,4 +1,4 @@
-package com.jsen.demo01;
+package com.jsen.demo01cookie;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
