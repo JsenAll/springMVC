@@ -1,6 +1,7 @@
-package com.jsen.demo02session; /*
- *@author Jsen
- *@description
+package com.jsen.demo02session;
+/**
+ * @author Jsen
+ * @description session
  */
 
 import javax.servlet.ServletException;
@@ -9,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class SessionDemo extends HttpServlet {
+public class SessionDemo01 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doGet(req, resp);
@@ -19,4 +20,5 @@ public class SessionDemo extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPost(req, resp);
     }
+
 }
