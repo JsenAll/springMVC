@@ -34,7 +34,6 @@ public class CookieDemo03 extends HttpServlet {
         }
         String myName = "蒋厚森";
         System.out.println(URLEncoder.encode(myName, "GBK"));
-
         System.out.println("转码前1-1" + myName);
         myName = URLEncoder.encode(myName, "UTF-8");
         System.out.println("转码后1-2" + myName);

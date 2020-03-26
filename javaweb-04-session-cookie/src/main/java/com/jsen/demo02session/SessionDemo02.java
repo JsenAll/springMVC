@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class SessionDemo01 extends HttpServlet {
+public class SessionDemo02 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -26,16 +26,13 @@ public class SessionDemo01 extends HttpServlet {
         HttpSession session = req.getSession();
 
         //geiSession 塞东西
-        session.setAttribute("name", new User("蒋厚森", 20));
+        User name = (User) session.getAttribute("name");
 
-        //获取sessionid
-        String sessionId = session.getId();
 
         //判断session 是不是新创建的
-        if (session.isNew())
-            resp.getWriter().write("session 创建成功--ID:" + sessionId);
-        else
-            resp.getWriter().write("已存在--ID:" + sessionId);
+        if (name != null)
+            resp.getWriter().write(name.toString());
+
 
     }
 
