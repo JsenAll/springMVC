@@ -16,6 +16,7 @@
         <module>javaweb-02servlet-02-servletContext</module>
         <module>javaweb-03servlet-03-HttpServletResponse</module>
         <module>javaweb-04-session-cookie</module>
+        <module>javaweb-05-jsp</module>
     </modules>
 
     <dependencies>

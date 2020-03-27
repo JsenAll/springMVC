@@ -50,7 +50,7 @@
         <servlet-name>session02</servlet-name>
         <servlet-class>com.jsen.demo02session.SessionDemo02</servlet-class>
     </servlet>
-    <!--    十五分钟后 sisson 自动失效-->
+    <!--十五分钟后 sisson 自动失效-->
     <session-config>
         <session-timeout>15</session-timeout>
     </session-config>
