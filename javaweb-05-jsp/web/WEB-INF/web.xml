@@ -3,4 +3,30 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/01</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>default</servlet-name>
+        <servlet-class>servlet.Test01</servlet-class>
+    </servlet>
+
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>filtertest.CharacterEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <!--<url-pattern>/servlet/*</url-pattern>-->
+        <!--只要是 /servlet的任何请求，会经过这个过滤器-->
+
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <listener>
+        <listener-class>listener.OnlineCountListener</listener-class>
+    </listener>
 </web-app>
