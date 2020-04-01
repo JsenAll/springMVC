@@ -16,7 +16,7 @@ import java.net.URLEncoder;
 public class DownFile extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws  IOException {
 
         // 1. 要获取下载文件的路径
         String realPath = "D:\\OneDrive\\电影\\杀燎都市.mp4";
