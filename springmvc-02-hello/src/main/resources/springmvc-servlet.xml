@@ -3,17 +3,22 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--
+    url 处理器  BeanNameUrlHandlerMapping
+    url 适配器  SimpleControllerHandlerAdapter
+    作用: 将url拿来进行匹配 有那个handle可以处理 这条url
+    http://localhost:8080/smvc02/hello
+-->
+<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+<!--视图解析器:DispatcherServlet给他的ModelAndView-->
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="InternalResourceViewResolver">
+    <!--前缀-->
+    <property name="prefix" value="/WEB-INF/jsp/"/>
+    <!--后缀-->
+    <property name="suffix" value=".jsp"/>
+</bean>
 
-    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
-    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
-    <!--视图解析器:DispatcherServlet给他的ModelAndView-->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="InternalResourceViewResolver">
-        <!--前缀-->
-        <property name="prefix" value="/WEB-INF/jsp/"/>
-        <!--后缀-->
-        <property name="suffix" value=".jsp"/>
-    </bean>
-
-    <!--Handler-->
-    <bean id="/hello" class="com.jsen.controller.HelloController"/>
+<!--Handler-->
+<bean id="/hello" class="com.jsen.controller.HelloController"/>
 </beans>

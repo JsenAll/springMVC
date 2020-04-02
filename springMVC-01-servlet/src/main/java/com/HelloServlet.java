@@ -13,9 +13,12 @@ public class HelloServlet extends HttpServlet {
         String method = req.getParameter("method");
         if (method.equals("add")) {
             req.getSession().setAttribute("msg", "执行了add方法");
-        }
-        if (method.equals("delete")) {
+        } else if (method.equals("delete")) {
             req.getSession().setAttribute("msg", "执行了delete方法");
+        }
+        else {
+            req.getSession().setAttribute("msg", "没有方法");
+
         }
         //业务逻辑
         //视图跳转

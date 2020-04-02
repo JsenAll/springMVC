@@ -3,11 +3,12 @@ package com.jsen.controller; /*
  *@description
  */
 
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.Controller;
 
-@Controller
+@Controller//也可以@Service
 @RequestMapping("/HelloController")
 public class HelloController {
 
