@@ -16,7 +16,7 @@
 
 
 --%>
-<form action="/downfile" enctype="multipart/form-data" method="post">
+<form action="${pageContext.request.contextPath}/upload.do" enctype="multipart/form-data" method="post">
     <input type="file" name="file1">
     <input type="submit">
     <input type="reset">

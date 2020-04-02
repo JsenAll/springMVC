@@ -5,12 +5,12 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>downfile</servlet-name>
+        <servlet-name>FileServlet</servlet-name>
         <servlet-class>com.jsen.servlet.FileServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>downfile</servlet-name>
-        <url-pattern>/downfile</url-pattern>
+        <servlet-name>FileServlet</servlet-name>
+        <url-pattern>/upload.do</url-pattern>
     </servlet-mapping>
 
 </web-app>
