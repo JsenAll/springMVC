@@ -47,4 +47,11 @@ public class CookieDemo01 extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doGet(req, resp);
     }
+
+    public static void main(String[] args) {
+        String url="http://www.iqiyi.com/v_19rxaoetm4.html?flashvars=videoIsFromQidan%3Ditemviewclkrec#curid=13934246400_9f903705c81bdb161440a5c52f600cdc";
+        if (url.matches("https?://.*")) {
+            System.out.println(url);
+        }
+    }
 }

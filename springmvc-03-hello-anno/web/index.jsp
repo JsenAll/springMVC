@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>注解开发spring mvc</title>
   </head>
   <body>
-  $END$
+  restful 风格
   </body>
 </html>

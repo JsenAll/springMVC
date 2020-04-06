@@ -1,4 +1,4 @@
-package com.jsen.controller; /*
+package com.jsen.controller.anno; /*
  *@author Jsen
  *@description
  */
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
 @RequestMapping("/HelloController")
 public class HelloController {
 
-    //真实访问地址 : 项目名/HelloController/hello
+                //真实访问地址 : 项目名/HelloController/hello
     @RequestMapping("/hello")
     public String sayHello(Model model) {
         //向模型中添加属性msg与值，可以在JSP页面中取出并渲染
