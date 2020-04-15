@@ -2,6 +2,7 @@ package com.jsen.controller.request;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import sun.text.normalizer.UnicodeSet;
@@ -15,6 +16,14 @@ public class Demo01 {
     //http://localhost:8080/demo?userName=jhs
     @RequestMapping("/demo")
     public String text01(String userName, Model model) {
+        System.out.println(userName);
+        model.addAttribute("msg", userName);
+        return "hello";
+    }
+
+    @PostMapping("/demo")
+    public String text0101(String userName, Model model) {
+        System.out.println(userName);
         model.addAttribute("msg", userName);
         return "hello";
     }

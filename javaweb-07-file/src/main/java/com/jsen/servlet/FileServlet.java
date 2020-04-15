@@ -1,6 +1,7 @@
-package com.jsen.servlet; /*
- *@author Jsen
- *@description
+package com.jsen.servlet;
+/**
+ * @author Jsen
+ * @description
  */
 
 import com.sun.org.apache.xml.internal.res.XMLErrorResources_tr;

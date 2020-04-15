@@ -19,6 +19,8 @@
         <module>javaweb-05-jsp</module>
         <module>javaweb-06-jdbc</module>
         <module>javaweb-07-file</module>
+        <module>springmvc-04-json</module>
+        <module>springmvc-05-ajax</module>
     </modules>
 
     <dependencies>
