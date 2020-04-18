@@ -21,6 +21,7 @@
         <module>javaweb-07-file</module>
         <module>springmvc-04-json</module>
         <module>springmvc-05-ajax</module>
+        <module>springmvc-06-interceptor</module>
     </modules>
 
     <dependencies>
